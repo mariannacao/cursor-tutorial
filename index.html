@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color Mood Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <h1>Color Mood Playground</h1>
+      <p class="app__subtitle">
+        Click a mood or randomize to generate a palette.
+      </p>
+    </header>
+
+    <section class="controls">
+      <button id="btn-random" class="btn">Randomize Palette</button>
+      <div class="mood-buttons">
+        <button class="btn btn-mood" data-mood="calm">Calm</button>
+        <button class="btn btn-mood" data-mood="energetic">Energetic</button>
+        <button class="btn btn-mood" data-mood="soft">Soft</button>
+      </div>
+    </section>
+
+    <section class="palette" id="palette">
+    </section>
+
+    <footer class="app__footer">
+      <p>Click a tile to copy its color code.</p>
+      <p class="app__hint">
+        In the video, I will show how you could use Cursor to redesign this layout, animations, and moods. 
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
